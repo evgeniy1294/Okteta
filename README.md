@@ -1,2 +1,2 @@
 # Okteta
-Okteta v0.26 library without KF5 dependencies. See original repo: https://github.com/KDE/okteta
+Okteta v0.26 library without KF5 dependencies. Please, see original repo: https://github.com/KDE/okteta
