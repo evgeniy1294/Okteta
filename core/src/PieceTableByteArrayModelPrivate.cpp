@@ -6,11 +6,11 @@
     SPDX-License-Identifier: LGPL-2.1-only OR LGPL-3.0-only OR LicenseRef-KDE-Accepted-LGPL
 */
 
-#include "piecetablebytearraymodel_p.hpp"
-#include "piecetablebytearraymodel.hpp"
+#include "Okteta/PieceTableByteArrayModelPrivate.hpp"
+#include "Okteta/PieceTableByteArrayModel.hpp"
 
 // lib
-#include <addressrangelist.hpp>
+#include <Okteta/AddressRangeList.hpp>
 
 namespace Okteta {
 

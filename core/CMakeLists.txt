@@ -50,10 +50,13 @@ set(
     src/OktetaCore.cpp
     src/AbstractByteArrayModel.cpp
     src/ByteArrayModel.cpp
+    src/ByteArrayModelPrivate.cpp
     #src/FileByteArrayModel
     src/PieceTableByteArrayModel.cpp
+    src/PieceTableByteArrayModelPrivate.cpp
     src/TextByteArrayAnalyzer.cpp
     src/FileByteArrayModel.cpp
+    src/FileByteArrayModelPrivate.cpp
     src/FixedSizeByteArrayModel.cpp
     src/NullModel.cpp
     src/BookmarkListConstIteratorAdapter.cpp
