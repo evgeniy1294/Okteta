@@ -10,7 +10,7 @@
 #define OKTETA_ABSTRACTCOLUMNRENDERER_HPP
 
 // lib
-#include "oktetagui_export.hpp"
+#include "Okteta/export/oktetagui_cfg.hpp"
 #include "Okteta/LibColumnsView/PixelMetrics.hpp"
 // Qt
 #include <QScopedPointer>

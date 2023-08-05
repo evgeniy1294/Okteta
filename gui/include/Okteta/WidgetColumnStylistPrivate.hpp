@@ -12,6 +12,8 @@
 // lib
 #include "Okteta/LibColumnsView/AbstractColumnStylistPrivate.hpp"
 
+class QWidget;
+
 namespace Okteta {
 
 class WidgetColumnStylistPrivate : public AbstractColumnStylistPrivate

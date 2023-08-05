@@ -9,7 +9,7 @@
 #ifndef OKTETA_BYTEARRAYTABLERANGES_HPP
 #define OKTETA_BYTEARRAYTABLERANGES_HPP
 
-#include "oktetagui_export.hpp"
+#include "Okteta/export/oktetagui_cfg.hpp"
 
 // lib
 #include "Okteta/Selection.hpp"

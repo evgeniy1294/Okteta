@@ -9,7 +9,7 @@
 #ifndef OKTETA_COLUMNSVIEW_HPP
 #define OKTETA_COLUMNSVIEW_HPP
 
-#include "oktetagui_export.hpp"
+#include "Okteta/export/oktetagui_cfg.hpp"
 
 // lib
 #include "Okteta/LibColumnsView/PixelMetrics.hpp"

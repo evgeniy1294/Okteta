@@ -9,7 +9,7 @@
 #ifndef KCOLORUTILS_H
 #define KCOLORUTILS_H
 
-#include "oktetagui_export.hpp"
+#include "Okteta/export/oktetagui_cfg.hpp"
 
 #include <QPainter>
 
