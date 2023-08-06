@@ -185,7 +185,6 @@ const QStringList& TextCharCodec::codecNames()
     // first call?
     if (textCodecNames.isEmpty()) {
         for (auto& encodingData : encodingDataList) {
-            bool isCodecFound = false;
             const QString codecName = QString::fromLatin1(encodingData.name);
             // silence deprecation warning
             // porting away would need a too big rework for a bugfix branch
@@ -194,7 +193,7 @@ const QStringList& TextCharCodec::codecNames()
             QT_WARNING_DISABLE_GCC("-Wdeprecated-declarations")
             QTextCodec* codec = QTextCodec::codecForName(codecName.toLatin1());
             QT_WARNING_POP
-            if (isCodecFound) {
+            if (codec) {
                 textCodecNames.append(QString::fromLatin1(codec->name()));
             }
         }
