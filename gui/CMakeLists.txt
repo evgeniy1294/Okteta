@@ -204,15 +204,17 @@ generate_export_header(${TARGET}
 )
 
 # ------------ [ Depends ] ------------
-find_package(QT NAMES Qt5 COMPONENTS Core Widgets REQUIRED)
+find_package(QT NAMES Qt6 Qt5 COMPONENTS Core REQUIRED)
 if(NOT DEFINED QT_BUILD_VERSION)
     set(QT_BUILD_VERSION ${QT_VERSION_MAJOR})
 endif()
 
+find_package(Qt${QT_BUILD_VERSION} COMPONENTS Core Gui Widgets REQUIRED)
+
 target_link_libraries(${TARGET}
     PRIVATE
-    Qt5::Core
-    Qt5::Widgets
+    Qt${QT_BUILD_VERSION}::Core
+    Qt${QT_BUILD_VERSION}::Widgets
     Okteta::Core
 )
 

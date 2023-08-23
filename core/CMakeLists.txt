@@ -159,14 +159,14 @@ generate_export_header(${TARGET}
 )
 
 # ------------ [ Depends ] ------------
-find_package(QT NAMES Qt5 COMPONENTS Core REQUIRED)
+find_package(QT NAMES Qt6 Qt5 COMPONENTS Core REQUIRED)
 if(NOT DEFINED QT_BUILD_VERSION)
     set(QT_BUILD_VERSION ${QT_VERSION_MAJOR})
 endif()
 
 target_link_libraries(${TARGET}
     PUBLIC
-      Qt5::Core
+      Qt${QT_BUILD_VERSION}::Core
 )
 
 
