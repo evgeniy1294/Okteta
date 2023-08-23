@@ -164,6 +164,8 @@ if(NOT DEFINED QT_BUILD_VERSION)
     set(QT_BUILD_VERSION ${QT_VERSION_MAJOR})
 endif()
 
+find_package(Qt${QT_BUILD_VERSION} COMPONENTS Core REQUIRED)
+
 target_link_libraries(${TARGET}
     PUBLIC
       Qt${QT_BUILD_VERSION}::Core
