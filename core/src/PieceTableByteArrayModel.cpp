@@ -259,4 +259,4 @@ void PieceTableByteArrayModel::doChanges(const QVector<Okteta::ByteArrayChange>&
 
 }
 
-// #include "moc_piecetablebytearraymodel.cpp"
+#include "moc_PieceTableByteArrayModel.cpp"

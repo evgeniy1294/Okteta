@@ -239,4 +239,4 @@ unsigned int ByteArrayModel::bookmarksCount() const
 
 }
 
-// #include "moc_bytearraymodel.cpp"
+#include "moc_ByteArrayModel.cpp"

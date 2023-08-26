@@ -101,6 +101,7 @@ set(
     include/Okteta/AddressRangeList.hpp
     include/Okteta/ArrayChangeMetrics.hpp
     include/Okteta/ArrayChangeMetricsList.hpp
+    include/Okteta/Bookmark.hpp
     include/Okteta/Bookmarkable.hpp
     include/Okteta/BookmarkList.hpp
     include/Okteta/BookmarkListConstIteratorAdapter.hpp
@@ -171,6 +172,10 @@ target_link_libraries(${TARGET}
       Qt${QT_BUILD_VERSION}::Core
 )
 
+if(${QT_BUILD_VERSION} EQUAL "6")
+  find_package(Qt6 REQUIRED COMPONENTS Core5Compat)
+  target_link_libraries(${TARGET} PUBLIC Qt6::Core5Compat)
+endif()
 
 # ------------ [ Properties and compile definitions ] ------------
 set_target_properties(${TARGET} PROPERTIES

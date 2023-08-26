@@ -14,7 +14,10 @@
 // Qt
 #include <QLinkedList>
 
+#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
 template <class T> class QVector;
+#endif
+
 
 namespace Okteta {
 

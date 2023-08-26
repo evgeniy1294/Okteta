@@ -14,6 +14,7 @@
 
 // Okteta core
 #include <Okteta/AddressRange.hpp>
+#include <Okteta/Bookmark.hpp>
 
 // Qt
 #include <QClipboard>
@@ -24,7 +25,6 @@ class QByteArray;
 
 namespace Okteta {
 
-class Bookmark;
 class ValueCodec;
 class CharCodec;
 class AbstractByteArrayModel;

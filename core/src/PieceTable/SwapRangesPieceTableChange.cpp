@@ -13,6 +13,10 @@
 //
 #include <Okteta/ArrayChangeMetrics.hpp>
 
+#if QT_VERSION >= QT_VERSION_CHECK(6, 0, 0)
+#include <QObject>
+#endif
+
 namespace KPieceTable {
 
 SwapRangesPieceTableChange::~SwapRangesPieceTableChange() = default;
