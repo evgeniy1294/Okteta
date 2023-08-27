@@ -26,6 +26,13 @@ PixelX ByteArrayColumnView::byteSpacingWidth() const
     Q_D(const ByteArrayColumnView);
     return d->byteSpacingWidth();
 }
+
+int ByteArrayColumnView::charSpacingWidth() const
+{
+    Q_D(const ByteArrayColumnView);
+    return d->charSpacingWidth();
+}
+
 int ByteArrayColumnView::noOfGroupedBytes() const
 {
     Q_D(const ByteArrayColumnView);
@@ -86,6 +93,12 @@ void ByteArrayColumnView::setByteSpacingWidth(int /*PixelX*/ byteSpacingWidth)
     d->setByteSpacingWidth(byteSpacingWidth);
 }
 
+void ByteArrayColumnView::setCharSpacingWidth(int charSpacing)
+{
+    Q_D(ByteArrayColumnView);
+    d->setCharSpacingWidth(charSpacing);
+}
+
 void ByteArrayColumnView::setNoOfGroupedBytes(int noOfGroupedBytes)
 {
     Q_D(ByteArrayColumnView);
@@ -140,6 +153,8 @@ void ByteArrayColumnView::setByteTypeColored(bool isColored)
     Q_D(ByteArrayColumnView);
     d->setByteTypeColored(isColored);
 }
+
+
 
 void ByteArrayColumnView::changeEvent(QEvent* event)
 {

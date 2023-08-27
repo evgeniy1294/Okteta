@@ -184,6 +184,7 @@ public: // value access
 public: // value access API
     // value column
     virtual int /*PixelX*/ byteSpacingWidth() const = 0;
+    virtual int /*PixelX*/ charSpacingWidth() const = 0;
     virtual int noOfGroupedBytes() const = 0;
     virtual int /*PixelX*/ groupSpacingWidth() const = 0;
     virtual int /*PixelX*/ binaryGapWidth() const = 0;
@@ -213,6 +214,9 @@ public:
      * default is 3
      */
     virtual void setByteSpacingWidth(int /*PixelX*/ byteSpacingWidth) = 0;
+
+    virtual void setCharSpacingWidth(int /*PixelX*/ byteSpacingWidth) = 0;
+
     /** sets the number of grouped bytes in the value column
      * @param noOfGroupedBytes numbers of grouped bytes, 0 means no grouping
      * default is 4

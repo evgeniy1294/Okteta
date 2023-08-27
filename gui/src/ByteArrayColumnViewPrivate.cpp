@@ -573,6 +573,14 @@ void ByteArrayColumnViewPrivate::blinkCursor()
     updateCursor(*mActiveColumn);
 }
 
+void ByteArrayColumnViewPrivate::setCharSpacingWidth(int charSpacingWidth)
+{
+    if (!mCharColumn->setByteSpacingWidth(charSpacingWidth)) {
+        return;
+    }
+    updateViewByWidth();
+}
+
 void ByteArrayColumnViewPrivate::updateCursors()
 {
     createCursorPixmaps();

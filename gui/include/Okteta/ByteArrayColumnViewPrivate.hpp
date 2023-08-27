@@ -32,6 +32,7 @@ public:
 public:
     // value column
     int /*PixelX*/ byteSpacingWidth() const;
+    int /*PixelX*/ charSpacingWidth() const;
     int noOfGroupedBytes() const;
     int /*PixelX*/ groupSpacingWidth() const;
     int /*PixelX*/ binaryGapWidth() const;
@@ -62,6 +63,7 @@ public: // AbstractByteArrayViewPrivate API
 
 public:
     // value column parameters
+    void setCharSpacingWidth(int /*PixelX*/ charSpacingWidth);
     void setByteSpacingWidth(int /*PixelX*/ byteSpacingWidth);
     void setNoOfGroupedBytes(int noOfGroupedBytes);
     void setGroupSpacingWidth(int /*PixelX*/ groupSpacingWidth);
@@ -121,6 +123,7 @@ private:
 };
 
 inline PixelX ByteArrayColumnViewPrivate::byteSpacingWidth()  const { return mValueColumn->byteSpacingWidth(); }
+inline PixelX ByteArrayColumnViewPrivate::charSpacingWidth()  const { return mCharColumn->byteSpacingWidth(); }
 inline int ByteArrayColumnViewPrivate::noOfGroupedBytes()      const { return mValueColumn->noOfGroupedBytes(); }
 inline PixelX ByteArrayColumnViewPrivate::groupSpacingWidth() const { return mValueColumn->groupSpacingWidth(); }
 inline PixelX ByteArrayColumnViewPrivate::binaryGapWidth()    const { return mValueColumn->binaryGapWidth(); }

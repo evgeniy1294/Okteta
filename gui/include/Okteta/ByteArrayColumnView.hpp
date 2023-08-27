@@ -40,6 +40,7 @@ public:
 public: // AbstractByteArrayView API
     // value column
     int /*PixelX*/ byteSpacingWidth() const override;
+    int /*PixelX*/ charSpacingWidth() const override;
     int noOfGroupedBytes() const override;
     int /*PixelX*/ groupSpacingWidth() const override;
     int /*PixelX*/ binaryGapWidth() const override;
@@ -53,6 +54,7 @@ public: // AbstractByteArrayView API
 
     void setByteArrayModel(AbstractByteArrayModel* byteArrayModel) override;
     void setByteSpacingWidth(int /*PixelX*/ byteSpacingWidth) override;
+    void setCharSpacingWidth(int /*PixelX*/ byteSpacing) override;
     void setNoOfGroupedBytes(int noOfGroupedBytes) override;
     void setGroupSpacingWidth(int /*PixelX*/ groupSpacingWidth) override;
     void setBinaryGapWidth(int binaryGapWidth) override;
@@ -65,6 +67,7 @@ public: // AbstractByteArrayView API
     void setCharCoding(CharCoding charCoding) override;
     void setCharCoding(const QString& charCodingName) override;
     void setByteTypeColored(bool isColored) override;
+
 
 public: // ColumnsView API
     void renderColumns(QPainter* painter, int cx, int cy, int cw, int ch) override;
