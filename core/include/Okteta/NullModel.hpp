@@ -5,7 +5,7 @@
 
 namespace Okteta {
 
-class NullModel : public AbstractByteArrayModel
+class OKTETACORE_EXPORT NullModel : public AbstractByteArrayModel
 {
     Q_OBJECT
 
