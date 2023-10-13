@@ -9,13 +9,15 @@
 #ifndef OKTETA_USASCIICHARCODEC_HPP
 #define OKTETA_USASCIICHARCODEC_HPP
 
+#include "Okteta/export/oktetacore_cfg.hpp"
+
 // lib
 #include <Okteta/CharCodec.hpp>
 
 namespace Okteta {
 
 //
-class USASCIICharCodec : public CharCodec
+class OKTETACORE_EXPORT USASCIICharCodec : public CharCodec
 {
 public:
     USASCIICharCodec(const USASCIICharCodec&) = delete;

@@ -9,12 +9,14 @@
 #ifndef OKTETA_BINARYBYTECODEC_HPP
 #define OKTETA_BINARYBYTECODEC_HPP
 
+#include "Okteta/export/oktetacore_cfg.hpp"
+
 // lib
 #include <Okteta/ValueCodec.hpp>
 
 namespace Okteta {
 
-class BinaryByteCodec : public ValueCodec
+class OKTETACORE_EXPORT BinaryByteCodec : public ValueCodec
 {
 public:
     BinaryByteCodec() = default;

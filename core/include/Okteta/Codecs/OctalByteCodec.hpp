@@ -9,12 +9,14 @@
 #ifndef OKTETA_OCTALBYTECODEC_HPP
 #define OKTETA_OCTALBYTECODEC_HPP
 
+#include "Okteta/export/oktetacore_cfg.hpp"
+
 // lib
 #include <Okteta/ValueCodec.hpp>
 
 namespace Okteta {
 
-class OctalByteCodec : public ValueCodec
+class OKTETACORE_EXPORT OctalByteCodec : public ValueCodec
 {
 public:
     OctalByteCodec() = default;

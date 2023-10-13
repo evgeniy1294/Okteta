@@ -9,6 +9,8 @@
 #ifndef OKTETA_HEXADECIMALBYTECODEC_HPP
 #define OKTETA_HEXADECIMALBYTECODEC_HPP
 
+#include "Okteta/export/oktetacore_cfg.hpp"
+
 // lib
 #include <Okteta/ValueCodec.hpp>
 
@@ -18,7 +20,7 @@ class QChar;
 
 namespace Okteta {
 
-class HexadecimalByteCodec : public ValueCodec
+class OKTETACORE_EXPORT HexadecimalByteCodec : public ValueCodec
 {
 public:
     explicit HexadecimalByteCodec(bool lowerCaseDigits = false);

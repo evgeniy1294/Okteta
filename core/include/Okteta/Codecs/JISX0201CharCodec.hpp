@@ -9,13 +9,15 @@
 #ifndef OKTETA_JISX0201CHARCODEC_HPP
 #define OKTETA_JISX0201CHARCODEC_HPP
 
+#include "Okteta/export/oktetacore_cfg.hpp"
+
 // lib
 #include <Okteta/CharCodec.hpp>
 
 namespace Okteta {
 
 //
-class JISX0201CharCodec : public CharCodec
+class OKTETACORE_EXPORT JISX0201CharCodec : public CharCodec
 {
 public:
     JISX0201CharCodec(const JISX0201CharCodec&) = delete;

@@ -9,12 +9,14 @@
 #ifndef OKTETA_DECIMALBYTECODEC_HPP
 #define OKTETA_DECIMALBYTECODEC_HPP
 
+#include "Okteta/export/oktetacore_cfg.hpp"
+
 // lib
 #include <Okteta/ValueCodec.hpp>
 
 namespace Okteta {
 
-class DecimalByteCodec : public ValueCodec
+class OKTETACORE_EXPORT DecimalByteCodec : public ValueCodec
 {
 public:
     DecimalByteCodec() = default;

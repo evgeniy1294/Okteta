@@ -9,13 +9,15 @@
 #ifndef OKTETA_IBM874CHARCODEC_HPP
 #define OKTETA_IBM874CHARCODEC_HPP
 
+#include "Okteta/export/oktetacore_cfg.hpp"
+
 // lib
 #include <Okteta/CharCodec.hpp>
 
 namespace Okteta {
 
 // Qt using ICU maps this onto TIS-620, which is not 100 % correct
-class IBM874CharCodec : public CharCodec
+class OKTETACORE_EXPORT IBM874CharCodec : public CharCodec
 {
 public:
     IBM874CharCodec(const IBM874CharCodec&) = delete;

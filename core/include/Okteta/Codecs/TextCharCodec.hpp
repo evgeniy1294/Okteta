@@ -9,6 +9,8 @@
 #ifndef OKTETA_TEXTCHARCODEC_HPP
 #define OKTETA_TEXTCHARCODEC_HPP
 
+#include "Okteta/export/oktetacore_cfg.hpp"
+
 // lib
 #include <Okteta/CharCodec.hpp>
 // Qt
@@ -21,7 +23,7 @@ class QTextEncoder;
 namespace Okteta {
 
 // used by all codecs with full char coping, i.e. there are no undefined chars
-class TextCharCodec : public CharCodec
+class OKTETACORE_EXPORT TextCharCodec : public CharCodec
 {
 public:
     static TextCharCodec* createCodec(const QString& codeName);
